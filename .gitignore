@@ -1,2 +1,4 @@
 /pytorch_model.bin
 /data
+/cifar10_checkpoint.bin
+/cifar10_checkpoint_10k.bin
