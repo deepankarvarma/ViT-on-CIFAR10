@@ -8,7 +8,7 @@ from torchvision.datasets import CIFAR10
 # Load the pre-trained ViT model and feature extractor
 feature_extractor = ViTFeatureExtractor.from_pretrained('nateraw/vit-base-patch16-224-cifar10')
 model = ViTForImageClassification.from_pretrained('nateraw/vit-base-patch16-224-cifar10')
-print("State Dict Keys:", model.state_dict().keys())
+# print("State Dict Keys:", model.state_dict().keys())
 # Download an image for testing
 url = 'https://www.cs.toronto.edu/~kriz/cifar-10-sample/dog10.png'
 image = Image.open(requests.get(url, stream=True).raw)
